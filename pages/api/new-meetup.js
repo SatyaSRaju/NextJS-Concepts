@@ -4,7 +4,7 @@ async function handler(req, res) {
     try {
       const data = JSON.parse(req.body);
       const client = await MongoClient.connect(
-        "mongodb+srv://svc_us_sraju:Nityajnanam333@cluster0.nsfcz.mongodb.net/meetups?retryWrites=true&w=majority"
+         "mongodb+srv:/<userName>:<password>@cluster0.nsfcz.mongodb.net/meetups?retryWrites=true&w=majority"
       );
       const db = client.db();
       const meetupCollection = db.collection("meetups");
